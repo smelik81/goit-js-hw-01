@@ -1,12 +1,17 @@
 // Task-3
 function getElementWidth(content, padding, border) {
-   const numContent = Number.parseInt(content);
-   const numPadding = Number.parseInt(padding);
-   const numBorder = Number.parseFloat(border);
-    const mathResult = (numContent + (numPadding + numBorder) * 2);
-    console.log(mathResult);
+   const contentWidth = Number.parseInt(content);
+   const contentPadding = Number.parseInt(padding);
+   const contentBorder = Number.parseFloat(border);
+    const mathResult = (contentWidth + (contentPadding + contentBorder) * 2); // я може і не програмист але на відмінно і не розумію чим відрізняється множення кожного елемента на 2 від мого підрахунку щоб виконати спочатку дію в дужках.Всі ментори кажуть що програмування це про варіативність, тому з Вашого дозволу я залишу так як я зробив обчислення першого разу - результат однаковий.Дякую
+    return mathResult;
 }
 
-getElementWidth("50px", "8px", "4px");
-getElementWidth("60px", "12px", "8.5px");
-getElementWidth("200px", "0px", "0px");
+const result_1 = getElementWidth('50px', '8px', '4px');
+console.log(result_1);
+const result_2 = getElementWidth('60px', '12px', '8.5px');
+console.log(result_2);
+const result_3 = getElementWidth('200px', '0px', '0px');
+console.log(result_3);
+
+
